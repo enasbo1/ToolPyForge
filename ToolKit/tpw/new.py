@@ -1,9 +1,9 @@
 from Core.Worker import tool_def
 from Core import inface
 from Core import fileWork as fw
+import os
 
-
-TOOLKIT_DIR = "ToolKit"
+TOOLKIT_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 
 
 def _tool_file_content(kit_name: str, tool_name: str) -> str:
